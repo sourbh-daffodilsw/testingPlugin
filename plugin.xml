@@ -17,7 +17,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="sessionVariable" >
-                <param name="android-package" value="sessionVariable" />
+                <param name="android-package" value="com.cordova.sessionVariable.sessionVariable" />
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
