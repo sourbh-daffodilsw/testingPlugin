@@ -1,4 +1,4 @@
-package com.corodova.sessionVariable;
+package com.cordova.sessionVariable;
 
 
 import org.apache.cordova.CordovaWebView;

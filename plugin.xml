@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="com.corodova.sessionVariable"
+        id="com.cordova.sessionVariable"
         version="0.0.1">
     <name>Sesion Variable</name>
-    <description>Plugin for storing varible</description>
+    <description>Plugin for storing variable</description>
     <license>Apache 2.0</license>
     <keywords>cordova,session,variable</keywords>
     <repo>https://github.com/sourbh-daffodilsw/testingPlugin.git</repo>
 
     <js-module src="www/sessionVariable.js" name="sessionVariable">
         <clobbers target="sessionVariable" />
+
     </js-module>
     <!-- android -->
     <platform name="android">
@@ -23,7 +24,7 @@
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         </config-file>
 
-        <source-file src="src/android/sessionVariable.java" target-dir="src/" />
+        <source-file src="src/android/sessionVariable.java" target-dir="src/com/cordova/sessionVariable" />
     </platform>
 </plugin>
 
