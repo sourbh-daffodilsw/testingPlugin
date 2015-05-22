@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="com.matd.coolplugin"
+        id="com.corodova.sessionVariable"
         version="0.0.1">
-    <name>CoolPlugin</name>
-    <description>The coolest Plugin ever implemented</description>
+    <name>Sesion Variable</name>
+    <description>Plugin for storing varible</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,coolest</keywords>
-    <repo></repo>
-    <issue></issue>
-    <js-module src="www/CoolPlugin.js" name="CoolPlugin">
-        <clobbers target="CoolPlugin" />
+    <keywords>cordova,session,variable</keywords>
+    <repo>https://github.com/sourbh-daffodilsw/testingPlugin.git</repo>
+
+    <js-module src="www/sessionVariable.js" name="sessionVariable">
+        <clobbers target="sessionVariable" />
     </js-module>
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="CoolPlugin" >
-                <param name="android-package" value="CoolPlugin"/>
+            <feature name="sessionVariable" >
+                <param name="android-package" value="sessionVariable" />
             </feature>
         </config-file>
-        <source-file src="src/android/CoolPlugin.java" target-dir="src/" />
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </config-file>
+
+        <source-file src="src/android/sessionVariable.java" target-dir="src/" />
     </platform>
 </plugin>
+
+
